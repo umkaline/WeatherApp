@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setCustomView(R.layout.action_bar);
 
-        hideKeyBoard();
+
 
         initializeViews(actionBar);
 
@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please wait");
+        hideKeyBoard();
         progressDialog.show();
 
     }
